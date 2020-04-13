@@ -1,0 +1,43 @@
+html, body {
+    background-color: #efefef;
+}
+
+/* custom navbar background color */
+.bg-light {
+  background-color: #efefef !important;
+}
+
+.rectangle {
+  height: 50px;
+  width: 100px;
+  border: 2px solid #c6ecc6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.divider{
+  background-color: #f0f0f0;
+  float: center;
+}
+
+.fb-color {
+  color: #4267B2;
+}
+
+.twitter-color {
+  color: #1da1f2;
+}
+
+.gmail-color {
+  color: #DB4437;
+}
+
+.voice-color {
+  color: #0F9D58;
+}
+#icon-pad {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}

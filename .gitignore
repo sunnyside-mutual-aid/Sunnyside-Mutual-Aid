@@ -1,0 +1,6 @@
+.env.prod
+.env.prod.db
+docker-compose.prod.yml
+nginx/nginx.conf.prod
+project/staticfiles/
+data/

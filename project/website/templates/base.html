@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Sunnyside Mutual Aid{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'boot/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}" >
+    <link rel="stylesheet" href="{% static 'custom/css/custom.css' %}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light static-top">
+    <a class="navbar-brand" href="/"><img src="{% static 'img/greylogo.png' %}" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="/get_help/">Get Help</a>
+      <a class="nav-item nav-link" href="/volunteer/">Volunteer</a>
+    </div>
+  </div>
+  </nav>
+  {% block jumbotron_block %}
+  <div class="container h-100">
+    <div class="jumbotron my-auto" style="background-color:#fffffa">
+      <div align="center">
+        {% block body_block %}
+        <h1 style="font-size:48px;"><strong>Sunnyside & Woodside Mutual Aid</strong></h1>
+	      <h1>Need Coronavirus Help?</h1>
+        <p>We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak.</p>
+        <h1>¿Necesita ayuda con el Coronavirus?</h1>
+        <p>Nos organizamos como comunidad para apoyarnos a todos durante la pandemia del Coronavirus COVID-19.</p>
+
+        <div class="container text-center center-block">
+          <div class="row justify-content-md-center">
+             <div class="rectangle" id="icon-pad">Groceries<br>Comestibles</div>
+             <div class="rectangle" id="icon-pad">Errands<br>Diligencias</div>
+             <div class="rectangle" id="icon-pad">Support<br>Apoyo</div>
+             <div class="rectangle" id="icon-pad">and more!<br>y más</div>
+          </div>
+        </div>
+
+        <br><hr class="divider"></br>
+
+        <h1>Want to volunteer? </h1>
+        <p>We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network.</p>
+        <h1> ¿Quiere ser voluntari@?</h1>
+        <p>¡Somos un grupo de organizadores comunitari@s uniendo a l@s que quieren ayudar con l@s que necesitan ayuda aquí en Sunnyside, Queens! Póngase en contacto si quiere ser incluíd@ en nuestra red.</p>
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  <script src="{% static 'jquery/jquery-3.4.1.slim.min.js' %}"></script>
+  <script src="{% static 'popper/popper.min.js' %}"></script>
+  <script src="{% static 'boot/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'fontawesome/js/all.js' %}"></script>
+  <footer>
+    <div class="container text-center center-block" align="center">
+       <div class="text-center center-block">
+             <a href="https://www.facebook.com/groups/sunnysidemutualaid/"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
+             <a href="https://twitter.com/sunnysideaid"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
+             <a href="mailto:sunnysidemutualaid@gmail.com"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
+             <a href="tel:+1-973-709-5975"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
