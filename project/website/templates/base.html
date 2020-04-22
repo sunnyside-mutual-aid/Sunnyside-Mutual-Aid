@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n utils %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +17,23 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-light navbar-light static-top">
-    <a class="navbar-brand" href="/" aria-label="Return to index"><img src="{% static 'img/greylogo.png' %}" alt="Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"></a>
+    <a class="navbar-brand" href="{% url 'index' %}" aria-label="Return to index"><img src="{% static 'img/greylogo.png' %}" alt="Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navigation">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="/get_help/">Get Help</a>
-      <a class="nav-item nav-link" href="/volunteer/">Volunteer</a>
+      <a class="nav-item nav-link" href="{% url 'get_help' %}">Get Help</a>
+      <a class="nav-item nav-link" href="{% url 'volunteer' %}">Volunteer</a>
+      {% get_pages as pages %}
+      {% for page in pages %}
+        <a class="nav-item nav-link" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+      {% endfor %}
+
+      <div class="lang-divider"></div>
+      {% for lang in LANGUAGES %}
+      <a class="nav-item nav-link language" href="/{{ lang.0 }}">{{ lang.1 }}</a>
+      {% endfor %}
     </div>
   </div>
   </nav>
