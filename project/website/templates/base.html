@@ -1,17 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>{% block title %}Sunnyside Mutual Aid{% endblock %}</title>
+    <title>{% block title %}Sunnyside & Woodside Mutual Aid{% endblock %}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    {% load static %}
+    <link rel="icon" href="{% static 'img/greylogo.png' %}" type="image/x-icon">
+
+    {% block meta %}
+    <meta name="description" content="We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak.">
+    {% endblock %}
+
     <link rel="stylesheet" href="{% static 'boot/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}" >
     <link rel="stylesheet" href="{% static 'custom/css/custom.css' %}">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-light navbar-light static-top">
-    <a class="navbar-brand" href="/"><img src="{% static 'img/greylogo.png' %}" alt=""></a>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light static-top">
+    <a class="navbar-brand" href="/" aria-label="Return to index"><img src="{% static 'img/greylogo.png' %}" alt="Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,17 +34,17 @@
       <div align="center">
         {% block body_block %}
         <h1 style="font-size:48px;"><strong>Sunnyside & Woodside Mutual Aid</strong></h1>
-	<h1>Need Coronavirus Help?</h1>
+	      <h1>Need Coronavirus Help?</h1>
         <p>We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak.</p>
         <h1>¿Necesita ayuda con el Coronavirus?</h1>
         <p>Nos organizamos como comunidad para apoyarnos a todos durante la pandemia del Coronavirus COVID-19.</p>
 
         <div class="container text-center center-block">
           <div class="row justify-content-md-center">
-             <div class="rectangle" id="icon-pad">Groceries<br>Comestibles</div>
-             <div class="rectangle" id="icon-pad">Errands<br>Diligencias</div>
-             <div class="rectangle" id="icon-pad">Support<br>Apoyo</div>
-             <div class="rectangle" id="icon-pad">and more!<br>y más</div>
+             <div class="rectangle icon-pad">Groceries<br>Comestibles</div>
+             <div class="rectangle icon-pad">Errands<br>Diligencias</div>
+             <div class="rectangle icon-pad">Support<br>Apoyo</div>
+             <div class="rectangle icon-pad">and more!<br>y más</div>
           </div>
         </div>
 
@@ -61,10 +67,10 @@
   <footer>
     <div class="container text-center center-block" align="center">
        <div class="text-center center-block">
-             <a href="https://www.facebook.com/groups/sunnysidemutualaid/"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
-             <a href="https://twitter.com/sunnysideaid"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
-             <a href="mailto:sunnysidemutualaid@gmail.com"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
-             <a href="tel:+1-973-709-5975"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
+             <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="Sunnyside & Woodside Mutual Aid Facebook group"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
+             <a href="https://twitter.com/sunnysideaid" aria-label="Sunnyside & Woodside Mutual Aid Twitter"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
+             <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="Sunnyside & Woodside Mutual Aid email address"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
+             <a href="tel:+1-973-709-5975" aria-label="Sunnyside & Woodside Mutual Aid telephone contact"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
         </div>
     </div>
   </footer>
