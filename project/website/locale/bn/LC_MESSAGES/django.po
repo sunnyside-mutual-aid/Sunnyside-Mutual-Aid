@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-22 22:24-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:5 templates/base.html:45
+msgid "Sunnyside & Woodside Mutual Aid"
+msgstr ""
+
+#: templates/base.html:11
+msgid ""
+"We're coming together as a community to support each other through the "
+"Coronavirus COVID-19 outbreak."
+msgstr ""
+
+#: templates/base.html:20
+msgid "Return to index"
+msgstr ""
+
+#: templates/base.html:20
+msgid ""
+"Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun "
+"in the background"
+msgstr ""
+
+#: templates/base.html:26
+msgid "Get Help"
+msgstr ""
+
+#: templates/base.html:27
+msgid "Volunteer"
+msgstr ""
+
+#: templates/base.html:46
+msgid "Need Coronavirus Help?"
+msgstr ""
+
+#: templates/base.html:47
+msgid ""
+"We’re coming together as a community to support each other through the "
+"Coronavirus COVID-19 outbreak."
+msgstr ""
+
+#: templates/base.html:51
+msgid "Groceries"
+msgstr ""
+
+#: templates/base.html:52
+msgid "Errands"
+msgstr ""
+
+#: templates/base.html:53
+msgid "Support"
+msgstr ""
+
+#: templates/base.html:54
+msgid "and more!"
+msgstr ""
+
+#: templates/base.html:60
+msgid "Want to volunteer?"
+msgstr ""
+
+#: templates/base.html:61
+msgid ""
+"We’re a group of community organizers helping match volunteers to people in "
+"need in Sunnyside, Queens!<BR> Please get in touch if you’d like to be added "
+"to our network."
+msgstr ""

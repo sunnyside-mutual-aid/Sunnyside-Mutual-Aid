@@ -8,8 +8,7 @@ html, body {
 }
 
 .rectangle {
-  height: 50px;
-  width: 100px;
+  padding: 10px;
   border: 2px solid #c6ecc6;
   border-radius: 10px;
   text-align: center;
