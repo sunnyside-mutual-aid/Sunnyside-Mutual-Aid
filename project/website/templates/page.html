@@ -9,6 +9,12 @@
 
 {% block jumbotron_block %}
   {% block body_block %}
-    {{ page.content|safe_markdown }}
+    <div class="container page-container">
+      <div class="row">
+        <div class="col-10 offset-1">
+          {{ page.content|safe_markdown }}
+        </div>
+      </div>
+    </div>
   {% endblock %}
 {% endblock %}
