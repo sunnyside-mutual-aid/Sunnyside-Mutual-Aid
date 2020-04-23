@@ -9,5 +9,5 @@ from .models import Page
 @admin.register(Page)
 class PageAdmin(TranslationAdmin):
     formfield_overrides = {
-        models.TextField: {'widget': AdminMartorWidget},
+        'content': {'widget': AdminMartorWidget},
     }

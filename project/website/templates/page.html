@@ -1,10 +1,20 @@
 {% extends "base.html" %}
-{% load martortags %}
+{% load static martortags %}
 
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block meta %}
-<meta name="description" content="Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic.">
+<meta name="og:title" content="{{ page.title }}"/>
+<meta name="og:type" content="website"/>
+<meta name="og:url" content="{{ request.path }}"/>
+<meta name="og:image" content="https://{{ request.META.HTTP_HOST }}{% static 'img/greylogo.png' %}"/>
+<meta name="og:image:width" content="60" />
+<meta name="og:image:height" content="60" />
+<meta name="og:description" content="{{ page.meta_description }}"/>
+
+{% if page.meta_description %}
+  <meta name="description" content="{{ page.meta_description }}">
+{% endif %}
 {% endblock %}
 
 {% block jumbotron_block %}

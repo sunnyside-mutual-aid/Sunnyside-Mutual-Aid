@@ -54,6 +54,10 @@ html, body {
   margin-bottom: 15px;
 }
 
+.page-container img {
+  max-width: 100%;
+}
+
 @media (max-width: 575px) {
   .navbar-nav {
     text-align: center;
@@ -61,5 +65,9 @@ html, body {
   }
   .navbar-nav a + a {
     border-top: solid 1px #CCC;
+  }
+  .lang-divider {
+    width: 100%;
+    border-top: solid 1px #000;
   }
 }

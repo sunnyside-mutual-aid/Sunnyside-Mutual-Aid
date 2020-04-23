@@ -1,6 +1,6 @@
 {% load static i18n utils %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
     <title>{% block title %}{% trans "Sunnyside & Woodside Mutual Aid" %}{% endblock %}</title>
     <meta charset="utf-8">
@@ -8,7 +8,15 @@
     <link rel="icon" href="{% static 'img/greylogo.png' %}" type="image/x-icon">
 
     {% block meta %}
-    <meta name="description" content="{% trans "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak." %}">
+      <meta name="og:title" content="{% trans 'Sunnyside & Woodside Mutual Aid' %}"/>
+      <meta name="og:type" content="website"/>
+      <meta name="og:url" content="{{ request.path }}"/>
+      <meta name="og:image" content="https://{{ request.META.HTTP_HOST }}{% static 'img/greylogo.png' %}"/>
+      <meta name="og:image:width" content="60" />
+      <meta name="og:image:height" content="60" />
+      <meta name="og:description" content="{% trans "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak." %}"/>
+
+      <meta name="description" content="{% trans "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak." %}">
     {% endblock %}
 
     <link rel="stylesheet" href="{% static 'boot/css/bootstrap.min.css' %}">
@@ -18,22 +26,25 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-light navbar-light static-top">
     <a class="navbar-brand" href="{% url 'index' %}" aria-label="{% trans 'Return to index' %}"><img src="{% static 'img/greylogo.png' %}" alt="{% trans 'Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background' %}"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navigation">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="{% url 'get_help' %}">{% trans 'Get Help' %}</a>
-      <a class="nav-item nav-link" href="{% url 'volunteer' %}">{% trans 'Volunteer' %}</a>
+      {% url 'get_help' as get_help %}
+      <a class="nav-item nav-link {% if get_help == request.path %}active{% endif %}" href="{{ get_help }}">{% trans 'Get Help' %}</a>
+      {% url 'volunteer' as volunteer_url%}
+      <a class="nav-item nav-link {% if volunteer_url == request.path %}active{% endif %}" href="{{ volunteer_url }}">{% trans 'Volunteer' %}</a>
+
       {% get_pages as pages %}
       {% for page in pages %}
-        <a class="nav-item nav-link" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+        <a class="nav-item nav-link {% if request.path == page.get_absolute_url %}active{% endif %}" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
       {% endfor %}
 
       <div class="lang-divider"></div>
       {% get_language_info_list for LANGUAGES as languages %}
       {% for lang in languages %}
-      <a class="nav-item nav-link language" href="/{{ lang.code }}/">{{ lang.name_local }}</a>
+      <a class="nav-item nav-link language {% if lang.code == LANGUAGE_CODE %}active{% endif %}" href="/{{ lang.code }}/">{{ lang.name_local }}</a>
       {% endfor %}
     </div>
   </div>
@@ -59,7 +70,7 @@
         <br><hr class="divider">
 
         <h1>{% trans "Want to volunteer?" %} </h1>
-        <p>{% trans "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens!<BR> Please get in touch if you’d like to be added to our network." %}</p>
+        <p>{% trans "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network." %}</p>
         {% endblock %}
       </div>
     </div>
@@ -73,10 +84,10 @@
   <footer>
     <div class="container text-center center-block" align="center">
        <div class="text-center center-block">
-             <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="Sunnyside & Woodside Mutual Aid Facebook group"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
-             <a href="https://twitter.com/sunnysideaid" aria-label="Sunnyside & Woodside Mutual Aid Twitter"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
-             <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="Sunnyside & Woodside Mutual Aid email address"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
-             <a href="tel:+1-973-709-5975" aria-label="Sunnyside & Woodside Mutual Aid telephone contact"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
+             <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Facebook group' %}"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
+             <a href="https://twitter.com/sunnysideaid" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Twitter' %}"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
+             <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
+             <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
         </div>
     </div>
   </footer>

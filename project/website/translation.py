@@ -16,5 +16,5 @@ class AutoSlugTranslationOptions(TranslationOptions):
 
 @register(Page)
 class PageTranslationOptions(AutoSlugTranslationOptions):
-    fields = ('title', 'slug', 'content')
+    fields = ('title', 'slug', 'meta_description', 'content')
     empty_values = {'slug': ''}

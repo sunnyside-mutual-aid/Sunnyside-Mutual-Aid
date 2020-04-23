@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Get Help{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Get Help" %}{% endblock %}
+
 {% block meta %}
-<meta name="description" content="Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic.">
+<meta name="description" content="{% trans 'Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic.' %}">
 {% endblock %}
+
 {% block jumbotron_block %}
 {% block body_block %}
 <div align="center">
@@ -12,7 +16,7 @@
   frameborder="0"
   marginheight="0"
   marginwidth="0"
-  allowfullscreen>Loading…</iframe>
+  allowfullscreen>{% trans 'Loading…' %}</iframe>
 </div>
 {% endblock %}
 {% endblock %}

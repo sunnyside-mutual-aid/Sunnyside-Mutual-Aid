@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-22 22:24-0400\n"
+"POT-Creation-Date: 2020-04-23 11:07-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,67 +18,90 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/base.html:5 templates/base.html:45
+#: templates/base.html:5 templates/base.html:11 templates/base.html:54
 msgid "Sunnyside & Woodside Mutual Aid"
 msgstr ""
 
-#: templates/base.html:11
-msgid ""
-"We're coming together as a community to support each other through the "
-"Coronavirus COVID-19 outbreak."
+#: templates/base.html:17 templates/base.html:19
+msgid "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
 msgstr ""
 
-#: templates/base.html:20
+#: templates/base.html:28
 msgid "Return to index"
 msgstr ""
 
-#: templates/base.html:20
-msgid ""
-"Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun "
-"in the background"
+#: templates/base.html:28
+msgid "Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"
 msgstr ""
 
-#: templates/base.html:26
+#: templates/base.html:29
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/base.html:34 templates/get_help.html:4
 msgid "Get Help"
 msgstr ""
 
-#: templates/base.html:27
+#: templates/base.html:35 templates/volunteer.html:4
 msgid "Volunteer"
 msgstr ""
 
-#: templates/base.html:46
+#: templates/base.html:55
 msgid "Need Coronavirus Help?"
 msgstr ""
 
-#: templates/base.html:47
-msgid ""
-"We’re coming together as a community to support each other through the "
-"Coronavirus COVID-19 outbreak."
-msgstr ""
-
-#: templates/base.html:51
-msgid "Groceries"
-msgstr ""
-
-#: templates/base.html:52
-msgid "Errands"
-msgstr ""
-
-#: templates/base.html:53
-msgid "Support"
-msgstr ""
-
-#: templates/base.html:54
-msgid "and more!"
+#: templates/base.html:56
+msgid "We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
 msgstr ""
 
 #: templates/base.html:60
-msgid "Want to volunteer?"
+msgid "Groceries"
 msgstr ""
 
 #: templates/base.html:61
-msgid ""
-"We’re a group of community organizers helping match volunteers to people in "
-"need in Sunnyside, Queens!<BR> Please get in touch if you’d like to be added "
-"to our network."
+msgid "Errands"
+msgstr ""
+
+#: templates/base.html:62
+msgid "Support"
+msgstr ""
+
+#: templates/base.html:63
+msgid "and more!"
+msgstr ""
+
+#: templates/base.html:69
+msgid "Want to volunteer?"
+msgstr ""
+
+#: templates/base.html:70
+msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
+msgstr ""
+
+#: templates/base.html:84
+msgid "Sunnyside & Woodside Mutual Aid Facebook group"
+msgstr ""
+
+#: templates/base.html:85
+msgid "Sunnyside & Woodside Mutual Aid Twitter"
+msgstr ""
+
+#: templates/base.html:86
+msgid "Sunnyside & Woodside Mutual Aid email address"
+msgstr ""
+
+#: templates/base.html:87
+msgid "Sunnyside & Woodside Mutual Aid telephone contact"
+msgstr ""
+
+#: templates/get_help.html:7
+msgid "Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic."
+msgstr ""
+
+#: templates/get_help.html:19 templates/volunteer.html:11
+msgid "Loading…"
+msgstr ""
+
+#: templates/volunteer.html:6
+msgid "Volunteer to Provide Coronavirus Mutual Aid in Sunnyside & Woodside."
 msgstr ""
