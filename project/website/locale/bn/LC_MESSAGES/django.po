@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-23 11:07-0400\n"
+"PO-Revision-Date: 2020-04-26 15:53-0400\n"
+"Language: bn_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
+
+#: templates/base.html:5 templates/base.html:11 templates/base.html:54
+msgid "Sunnyside & Woodside Mutual Aid"
+msgstr "অঙ্গসাইড-উডসাইড মিউচ্যুয়াল এইড"
+
+#: templates/base.html:17 templates/base.html:19
+msgid "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
+msgstr "আমরা একটি কমিউনিটি হিসেবে একে অপরকে সমর্থন করার জন্য একটি সম্প্রদায় হিসাবে আসছে করোভাইরাস COVID-19 প্রাদুর্ভাব."
+
+#: templates/base.html:28
+msgid "Return to index"
+msgstr "সূচিতে প্রত্যাবর্তন"
+
+#: templates/base.html:28
+msgid "Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"
+msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড লোগো-দুটি গাছ পাশে পাশে সূর্যের সঙ্গে"
+
+#: templates/base.html:29
+msgid "Toggle navigation"
+msgstr "টগল নেভিগেশান"
+
+#: templates/base.html:34 templates/get_help.html:4
+msgid "Get Help"
+msgstr "সাহায্য নিন"
+
+#: templates/base.html:35 templates/volunteer.html:4
+msgid "Volunteer"
+msgstr "স্বেচ্ছাসেবী"
+
+#: templates/base.html:55
+msgid "Need Coronavirus Help?"
+msgstr "করোভাইরাস সাহায্য প্রয়োজন?"
+
+#: templates/base.html:56
+msgid "We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
+msgstr "আমরা একটি কমিউনিটি হিসেবে একে অপরকে সমর্থন করার জন্য একটি সম্প্রদায় হিসাবে আসছে করোভাইরাস COVID-19 প্রাদুর্ভাব."
+
+#: templates/base.html:60
+msgid "Groceries"
+msgstr "মুদিখানার"
+
+#: templates/base.html:61
+msgid "Errands"
+msgstr "ঘোরাঘুরি"
+
+#: templates/base.html:62
+msgid "Support"
+msgstr "সমর্থন"
+
+#: templates/base.html:63
+msgid "and more!"
+msgstr "এবং আরও!"
+
+#: templates/base.html:69
+msgid "Want to volunteer?"
+msgstr "স্বেচ্ছাবসর নিতে চান?"
+
+#: templates/base.html:70
+msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
+msgstr "আমরা একদল কমিউনিটি সংগঠক, যারা অঙ্গপক্ষকে, কুইন্স! অনুগ্রহ করে যোগাযোগ করুন যদি আপনি আমাদের নেটওয়ার্কে যুক্ত হতে চান ।"
+
+#: templates/base.html:84
+msgid "Sunnyside & Woodside Mutual Aid Facebook group"
+msgstr "অঙ্গসাইড-উডসাইড মিউচ্যুয়াল এইড ফেসবুক গ্রুপ"
+
+#: templates/base.html:85
+msgid "Sunnyside & Woodside Mutual Aid Twitter"
+msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টুইটার"
+
+#: templates/base.html:86
+msgid "Sunnyside & Woodside Mutual Aid email address"
+msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড ইমেইল ঠিকানা"
+
+#: templates/base.html:87
+msgid "Sunnyside & Woodside Mutual Aid telephone contact"
+msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টেলিফোন যোগাযোগ"
+
+#: templates/get_help.html:7
+msgid "Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic."
+msgstr "অঙ্গসাইড, উডসাইড এবং কুইন্স এবং ইয়র্ক জুড়ে প্রতিবেশীরা, অভিনব করোভাইরাস (COVID-19) মহামারির প্রভাব কারণে যারা কষ্টের সম্মুখীন তাদের পারস্পরিক সাহায্য প্রদান করা হয় ।"
+
+#: templates/get_help.html:19 templates/volunteer.html:11
+msgid "Loading…"
+msgstr "লোড..."
+
+#: templates/volunteer.html:6
+msgid "Volunteer to Provide Coronavirus Mutual Aid in Sunnyside & Woodside."
+msgstr "অঙ্গপক্ষ-কাঠপাশে করোভাইরাস মিউচুয়াল এইড দিতে স্বেচ্ছাসেবক ।"

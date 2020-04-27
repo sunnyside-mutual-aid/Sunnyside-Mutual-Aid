@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from django.utils.translation import gettext_lazy as _
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -29,18 +31,21 @@ ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(" ")
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation', # apparently needs to be first
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'martor', # markdown admin editor
     'website',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -61,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -114,6 +120,23 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('bn', _('Bengali')),
+    #('zh', _('Chinese')),
+    #('ko', _('Korean')),
+    #('tl', _('Tagalog')),
+)
+
+
+import time
+MARTOR_UPLOAD_PATH = 'images/uploads/{}'.format(time.strftime("%Y/%m/%d/"))
+MARTOR_UPLOAD_URL = '/api/uploader/'  # change to local uploader
+MAX_IMAGE_UPLOAD_SIZE = 10485760 # 10mb
+MARTOR_ENABLE_LABEL = True
 
 
 # Static files (CSS, JavaScript, Images)

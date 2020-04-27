@@ -8,8 +8,7 @@ html, body {
 }
 
 .rectangle {
-  height: 50px;
-  width: 100px;
+  padding: 10px;
   border: 2px solid #c6ecc6;
   border-radius: 10px;
   text-align: center;
@@ -42,6 +41,21 @@ html, body {
   margin-right: 8px;
 }
 
+.navbar-nav {
+  width: 100%;
+}
+.lang-divider {
+  margin-left: auto;
+}
+
+.page-container {
+  background: #fffffa;
+}
+
+.page-container img {
+  max-width: 100%;
+}
+
 @media (max-width: 575px) {
   .navbar-nav {
     text-align: center;
@@ -49,5 +63,9 @@ html, body {
   }
   .navbar-nav a + a {
     border-top: solid 1px #CCC;
+  }
+  .lang-divider {
+    width: 100%;
+    border-top: solid 1px #000;
   }
 }

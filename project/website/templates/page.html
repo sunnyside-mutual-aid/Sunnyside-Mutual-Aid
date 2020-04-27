@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static martortags %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block meta %}
+<meta name="og:title" content="{{ page.title }}"/>
+<meta name="og:type" content="website"/>
+<meta name="og:url" content="{{ request.path }}"/>
+<meta name="og:image" content="https://{{ request.META.HTTP_HOST }}{% static 'img/greylogo.png' %}"/>
+<meta name="og:image:width" content="60" />
+<meta name="og:image:height" content="60" />
+<meta name="og:description" content="{{ page.meta_description }}"/>
+
+{% if page.meta_description %}
+  <meta name="description" content="{{ page.meta_description }}">
+{% endif %}
+{% endblock %}
+
+{% block jumbotron_block %}
+  {% block body_block %}
+    <div class="container jumbotron page-container h-100 mb-2">
+      <div class="row">
+        <div class="col-12">
+          {{ page.content|safe_markdown }}
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+{% endblock %}

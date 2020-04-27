@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-23 11:07-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:5 templates/base.html:11 templates/base.html:54
+msgid "Sunnyside & Woodside Mutual Aid"
+msgstr "Ayuda Mutua de Sunnyside & Woodside"
+
+#: templates/base.html:17 templates/base.html:19
+#, fuzzy
+#| msgid "We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
+msgid "We're coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
+msgstr "Nos estamos uniendo como comunidad para apoyarnos mutuamente durante el curso del Coronavirus COVID-19."
+
+#: templates/base.html:28
+msgid "Return to index"
+msgstr "Regresar al índice"
+
+#: templates/base.html:28
+msgid "Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background"
+msgstr "Logo de Sunnyside & Woodside Mutual Aid - dos árboles lado a lado con el sol de fondo."
+
+#: templates/base.html:29
+msgid "Toggle navigation"
+msgstr "Cambiar navegación"
+
+#: templates/base.html:34 templates/get_help.html:4
+msgid "Get Help"
+msgstr "Obtenga Ayuda"
+
+#: templates/base.html:35 templates/volunteer.html:4
+msgid "Volunteer"
+msgstr "Voluntari@"
+
+#: templates/base.html:55
+msgid "Need Coronavirus Help?"
+msgstr "¿Necesita ayuda relacionada al Coronavirus?"
+
+#: templates/base.html:56
+msgid "We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
+msgstr "Nos estamos uniendo como comunidad para apoyarnos mutuamente durante el curso del Coronavirus COVID-19."
+
+#: templates/base.html:60
+msgid "Groceries"
+msgstr "Comestibles"
+
+#: templates/base.html:61
+msgid "Errands"
+msgstr "Diligencias"
+
+#: templates/base.html:62
+msgid "Support"
+msgstr "Apoyo"
+
+#: templates/base.html:63
+msgid "and more!"
+msgstr "¡y más!"
+
+#: templates/base.html:69
+msgid "Want to volunteer?"
+msgstr "¿Quiere ser voluntari@?"
+
+#: templates/base.html:70
+msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
+msgstr "¡Somos un grupo de organizadores comunitari@s uniendo a l@s que quieren ayudar con l@s que necesitan ayuda aquí en Sunnyside, Queens! Favor de comunicarse si quiere ser parte de nuestra red de ayuda."
+
+#: templates/base.html:84
+msgid "Sunnyside & Woodside Mutual Aid Facebook group"
+msgstr "Grupo de Facebook de Sunnyside & Woodside Mutual Aid"
+
+#: templates/base.html:85
+msgid "Sunnyside & Woodside Mutual Aid Twitter"
+msgstr "Twitter de Sunnyside & Woodside Mutual Aid"
+
+#: templates/base.html:86
+msgid "Sunnyside & Woodside Mutual Aid email address"
+msgstr "Correo electrónico de Sunnyside & Woodside Mutual Aid"
+
+#: templates/base.html:87
+msgid "Sunnyside & Woodside Mutual Aid telephone contact"
+msgstr "Contacto telefónico de Sunnyside & Woodside Mutual Aid"
+
+#: templates/get_help.html:7
+msgid "Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic."
+msgstr "Vecin@as en Sunnyside, Woodside y por todo Queens y NYC, están proveyendo ayuda mutua a aquell@s que están pasando por momentos difíciles por el impacto de este nuevo coronavirus (COVID-19)"
+
+#: templates/get_help.html:19 templates/volunteer.html:11
+msgid "Loading…"
+msgstr "Cargando..."
+
+#: templates/volunteer.html:6
+msgid "Volunteer to Provide Coronavirus Mutual Aid in Sunnyside & Woodside."
+msgstr "Sea voluntari@ de Sunnyside & Woodside Mutual Aid para proveer ayuda mutua durante esta pandemia."
