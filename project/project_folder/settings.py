@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import time
 
 from django.utils.translation import gettext_lazy as _
 
@@ -31,14 +32,14 @@ ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(" ")
 # Application definition
 
 INSTALLED_APPS = [
-    'modeltranslation', # apparently needs to be first
+    'modeltranslation',  # apparently needs to be first
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'martor', # markdown admin editor
+    'martor',  # markdown admin editor
     'website',
 ]
 
@@ -126,16 +127,15 @@ LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
     ('bn', _('Bengali')),
-    #('zh', _('Chinese')),
-    #('ko', _('Korean')),
-    #('tl', _('Tagalog')),
+    # ('zh', _('Chinese')),
+    # ('ko', _('Korean')),
+    # ('tl', _('Tagalog')),
 )
 
 
-import time
 MARTOR_UPLOAD_PATH = 'images/uploads/{}'.format(time.strftime("%Y/%m/%d/"))
 MARTOR_UPLOAD_URL = '/api/uploader/'  # change to local uploader
-MAX_IMAGE_UPLOAD_SIZE = 10485760 # 10mb
+MAX_IMAGE_UPLOAD_SIZE = 10485760  # 10mb
 MARTOR_ENABLE_LABEL = True
 
 
