@@ -28,7 +28,7 @@ def volunteer(request):
 
 
 def get_page(request, slug):
-    page = get_object_or_404(Page.objects.filter(published=True), slug=slug)
+    page = get_object_or_404(Page.objects.published(request), slug=slug)
     return render(request, 'page.html', {
         'page': page
     })

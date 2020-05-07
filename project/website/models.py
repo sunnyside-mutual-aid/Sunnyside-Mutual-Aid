@@ -4,6 +4,15 @@ from django.urls import reverse
 from martor.models import MartorField
 
 
+class PageManager(models.Manager):
+    def published(self, request = None):
+        """Show unpublished pages to staff"""
+        if request and request.user.is_staff:
+            return self
+
+        return self.filter(published=True)
+
+
 class Page(models.Model):
     title = models.CharField(max_length=255)
     slug = AutoSlugField(populate_from='title', max_length=255)
@@ -19,6 +28,8 @@ class Page(models.Model):
         blank=True,
         null=True
     )
+
+    objects = PageManager()
 
     def __str__(self):
         return self.title
