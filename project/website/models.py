@@ -5,7 +5,7 @@ from martor.models import MartorField
 
 
 class PageManager(models.Manager):
-    def published(self, request = None):
+    def published(self, request=None):
         """Show unpublished pages to staff"""
         if request and request.user.is_staff:
             return self
