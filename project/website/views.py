@@ -7,7 +7,7 @@ from django.conf import settings
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 
 from martor.utils import LazyEncoder
 
@@ -18,17 +18,19 @@ from .models import Page
 def index(request):
     return render(request, 'base.html')
 
-
-def get_help(request):
-    return render(request, 'get_help.html')
-
-
-def volunteer(request):
-    return render(request, 'volunteer.html')
-
-
 def get_page(request, slug):
-    page = get_object_or_404(Page.objects.published(request), slug=slug)
+    """
+    First try to match respective lang slug, or `slug_en` explicitly and
+    redirect to translated slug if successful.
+    """
+    try:
+        page = Page.objects.published(request).get(slug=slug)
+    except Page.DoesNotExist:
+        page = get_object_or_404(Page.objects.published(request), slug_en=slug)
+
+        if not page.slug == slug:
+            return redirect('page', page.slug)
+
     return render(request, 'page.html', {
         'page': page
     })

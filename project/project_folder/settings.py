@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.redirects',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
     'martor',  # markdown admin editor
     'website',
@@ -45,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -122,6 +125,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_ID = 1
+
 gettext = lambda s: s
 LANGUAGES = (
     ('en', _('English')),
@@ -131,6 +136,7 @@ LANGUAGES = (
     # ('ko', _('Korean')),
     # ('tl', _('Tagalog')),
 )
+AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 
 
 MARTOR_UPLOAD_PATH = 'images/uploads/{}'.format(time.strftime("%Y/%m/%d/"))
