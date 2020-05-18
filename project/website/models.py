@@ -17,6 +17,10 @@ class Page(models.Model):
     title = models.CharField(max_length=255)
     slug = AutoSlugField(populate_from='title', max_length=255)
     published = models.BooleanField()
+    order = models.PositiveIntegerField(
+        help_text="Set the order this page will appear in the nav.",
+        default=0
+    )
     meta_description = models.TextField(
         help_text="Text for meta tag description and social cards (SEO)",
         blank=True,
@@ -30,6 +34,9 @@ class Page(models.Model):
     )
 
     objects = PageManager()
+
+    class Meta:
+        ordering = ('order',)
 
     def __str__(self):
         return self.title

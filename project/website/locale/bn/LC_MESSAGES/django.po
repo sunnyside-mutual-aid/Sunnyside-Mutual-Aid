@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 11:07-0400\n"
+"POT-Creation-Date: 2020-05-17 14:40-0400\n"
 "PO-Revision-Date: 2020-04-26 15:53-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: bn_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.3\n"
 
-#: templates/base.html:5 templates/base.html:11 templates/base.html:54
+#: templates/base.html:5 templates/base.html:11 templates/base.html:52
 msgid "Sunnyside & Woodside Mutual Aid"
 msgstr "অঙ্গসাইড-উডসাইড মিউচ্যুয়াল এইড"
 
@@ -38,70 +38,65 @@ msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল 
 msgid "Toggle navigation"
 msgstr "টগল নেভিগেশান"
 
-#: templates/base.html:34 templates/get_help.html:4
-msgid "Get Help"
-msgstr "সাহায্য নিন"
-
-#: templates/base.html:35 templates/volunteer.html:4
-msgid "Volunteer"
-msgstr "স্বেচ্ছাসেবী"
-
-#: templates/base.html:55
+#: templates/base.html:53
 msgid "Need Coronavirus Help?"
 msgstr "করোভাইরাস সাহায্য প্রয়োজন?"
 
-#: templates/base.html:56
+#: templates/base.html:54
 msgid "We’re coming together as a community to support each other through the Coronavirus COVID-19 outbreak."
 msgstr "আমরা একটি কমিউনিটি হিসেবে একে অপরকে সমর্থন করার জন্য একটি সম্প্রদায় হিসাবে আসছে করোভাইরাস COVID-19 প্রাদুর্ভাব."
 
-#: templates/base.html:60
+#: templates/base.html:58
 msgid "Groceries"
 msgstr "মুদিখানার"
 
-#: templates/base.html:61
+#: templates/base.html:59
 msgid "Errands"
 msgstr "ঘোরাঘুরি"
 
-#: templates/base.html:62
+#: templates/base.html:60
 msgid "Support"
 msgstr "সমর্থন"
 
-#: templates/base.html:63
+#: templates/base.html:61
 msgid "and more!"
 msgstr "এবং আরও!"
 
-#: templates/base.html:69
+#: templates/base.html:66
 msgid "Want to volunteer?"
 msgstr "স্বেচ্ছাবসর নিতে চান?"
 
-#: templates/base.html:70
+#: templates/base.html:67
 msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
 msgstr "আমরা একদল কমিউনিটি সংগঠক, যারা অঙ্গপক্ষকে, কুইন্স! অনুগ্রহ করে যোগাযোগ করুন যদি আপনি আমাদের নেটওয়ার্কে যুক্ত হতে চান ।"
 
-#: templates/base.html:84
+#: templates/base.html:81
 msgid "Sunnyside & Woodside Mutual Aid Facebook group"
 msgstr "অঙ্গসাইড-উডসাইড মিউচ্যুয়াল এইড ফেসবুক গ্রুপ"
 
-#: templates/base.html:85
+#: templates/base.html:82
 msgid "Sunnyside & Woodside Mutual Aid Twitter"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টুইটার"
 
-#: templates/base.html:86
+#: templates/base.html:83
 msgid "Sunnyside & Woodside Mutual Aid email address"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড ইমেইল ঠিকানা"
 
-#: templates/base.html:87
+#: templates/base.html:84
 msgid "Sunnyside & Woodside Mutual Aid telephone contact"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টেলিফোন যোগাযোগ"
 
-#: templates/get_help.html:7
-msgid "Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic."
-msgstr "অঙ্গসাইড, উডসাইড এবং কুইন্স এবং ইয়র্ক জুড়ে প্রতিবেশীরা, অভিনব করোভাইরাস (COVID-19) মহামারির প্রভাব কারণে যারা কষ্টের সম্মুখীন তাদের পারস্পরিক সাহায্য প্রদান করা হয় ।"
+#~ msgid "Get Help"
+#~ msgstr "সাহায্য নিন"
 
-#: templates/get_help.html:19 templates/volunteer.html:11
-msgid "Loading…"
-msgstr "লোড..."
+#~ msgid "Volunteer"
+#~ msgstr "স্বেচ্ছাসেবী"
 
-#: templates/volunteer.html:6
-msgid "Volunteer to Provide Coronavirus Mutual Aid in Sunnyside & Woodside."
-msgstr "অঙ্গপক্ষ-কাঠপাশে করোভাইরাস মিউচুয়াল এইড দিতে স্বেচ্ছাসেবক ।"
+#~ msgid "Neighbors in Sunnyside, Woodside, and throughout Queens and NYC, are providing mutual aid to those facing hardship due to the impacts of the novel coronavirus (COVID-19) pandemic."
+#~ msgstr "অঙ্গসাইড, উডসাইড এবং কুইন্স এবং ইয়র্ক জুড়ে প্রতিবেশীরা, অভিনব করোভাইরাস (COVID-19) মহামারির প্রভাব কারণে যারা কষ্টের সম্মুখীন তাদের পারস্পরিক সাহায্য প্রদান করা হয় ।"
+
+#~ msgid "Loading…"
+#~ msgstr "লোড..."
+
+#~ msgid "Volunteer to Provide Coronavirus Mutual Aid in Sunnyside & Woodside."
+#~ msgstr "অঙ্গপক্ষ-কাঠপাশে করোভাইরাস মিউচুয়াল এইড দিতে স্বেচ্ছাসেবক ।"

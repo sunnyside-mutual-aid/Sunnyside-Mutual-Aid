@@ -5,3 +5,5 @@ project/staticfiles/
 data/
 
 mediafiles/
+
+**/__pycache__
