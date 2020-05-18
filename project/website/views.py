@@ -18,6 +18,7 @@ from .models import Page
 def index(request):
     return render(request, 'base.html')
 
+
 def get_page(request, slug):
     """
     First try to match respective lang slug, or `slug_en` explicitly and
