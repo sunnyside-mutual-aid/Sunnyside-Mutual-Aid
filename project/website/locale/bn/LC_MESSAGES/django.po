@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-17 14:40-0400\n"
+"POT-Creation-Date: 2020-05-28 23:21-0400\n"
 "PO-Revision-Date: 2020-04-26 15:53-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -70,19 +70,19 @@ msgstr "স্বেচ্ছাবসর নিতে চান?"
 msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
 msgstr "আমরা একদল কমিউনিটি সংগঠক, যারা অঙ্গপক্ষকে, কুইন্স! অনুগ্রহ করে যোগাযোগ করুন যদি আপনি আমাদের নেটওয়ার্কে যুক্ত হতে চান ।"
 
-#: templates/base.html:81
+#: templates/base.html:84
 msgid "Sunnyside & Woodside Mutual Aid Facebook group"
 msgstr "অঙ্গসাইড-উডসাইড মিউচ্যুয়াল এইড ফেসবুক গ্রুপ"
 
-#: templates/base.html:82
+#: templates/base.html:85
 msgid "Sunnyside & Woodside Mutual Aid Twitter"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টুইটার"
 
-#: templates/base.html:83
+#: templates/base.html:86
 msgid "Sunnyside & Woodside Mutual Aid email address"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড ইমেইল ঠিকানা"
 
-#: templates/base.html:84
+#: templates/base.html:87
 msgid "Sunnyside & Woodside Mutual Aid telephone contact"
 msgstr "অঙ্গসাইড-উডসাইড মিউচুয়াল এইড টেলিফোন যোগাযোগ"
 

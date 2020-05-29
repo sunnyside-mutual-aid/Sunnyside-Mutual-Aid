@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-17 14:40-0400\n"
+"POT-Creation-Date: 2020-05-28 23:21-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,19 +72,19 @@ msgstr "¿Quiere ser voluntari@?"
 msgid "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network."
 msgstr "¡Somos un grupo de organizadores comunitari@s uniendo a l@s que quieren ayudar con l@s que necesitan ayuda aquí en Sunnyside, Queens! Favor de comunicarse si quiere ser parte de nuestra red de ayuda."
 
-#: templates/base.html:81
+#: templates/base.html:84
 msgid "Sunnyside & Woodside Mutual Aid Facebook group"
 msgstr "Grupo de Facebook de Sunnyside & Woodside Mutual Aid"
 
-#: templates/base.html:82
+#: templates/base.html:85
 msgid "Sunnyside & Woodside Mutual Aid Twitter"
 msgstr "Twitter de Sunnyside & Woodside Mutual Aid"
 
-#: templates/base.html:83
+#: templates/base.html:86
 msgid "Sunnyside & Woodside Mutual Aid email address"
 msgstr "Correo electrónico de Sunnyside & Woodside Mutual Aid"
 
-#: templates/base.html:84
+#: templates/base.html:87
 msgid "Sunnyside & Woodside Mutual Aid telephone contact"
 msgstr "Contacto telefónico de Sunnyside & Woodside Mutual Aid"
 
