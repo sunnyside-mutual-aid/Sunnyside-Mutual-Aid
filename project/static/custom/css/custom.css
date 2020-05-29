@@ -68,4 +68,7 @@ html, body {
     width: 100%;
     border-top: solid 1px #000;
   }
+  .mailing-list {
+    width: 100%;
+  }
 }
