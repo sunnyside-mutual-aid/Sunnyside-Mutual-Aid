@@ -65,6 +65,9 @@
         <br><hr class="divider">
         <h2><a href="{% url 'page' slug='volunteer' %}">{% trans "Want to volunteer?" %}</a></h2>
         <p>{% trans "We’re a group of community organizers helping match volunteers to people in need in Sunnyside, Queens! Please get in touch if you’d like to be added to our network." %}</p>
+
+        <br><hr class="divider">
+        <iframe src="https://swma.substack.com/embed" width="480" height="320" frameborder="0" scrolling="no"></iframe>
         {% endblock %}
       </div>
     </div>
@@ -76,12 +79,12 @@
   <script src="{% static 'boot/js/bootstrap.min.js' %}"></script>
   <script src="{% static 'fontawesome/js/all.js' %}"></script>
   <footer>
-    <div class="container text-center center-block" align="center">
+    <div class="container text-center center-block mt-4 mb-4" align="center">
        <div class="text-center center-block">
-             <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Facebook group' %}"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
-             <a href="https://twitter.com/sunnysideaid" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Twitter' %}"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
-             <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
-             <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
+          <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Facebook group' %}"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
+          <a href="https://twitter.com/sunnysideaid" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Twitter' %}"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
+          <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
+          <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
         </div>
     </div>
   </footer>

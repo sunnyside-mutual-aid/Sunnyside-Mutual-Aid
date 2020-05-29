@@ -56,6 +56,10 @@ html, body {
   max-width: 100%;
 }
 
+footer a + a {
+  margin-left: 12px;
+}
+
 @media (max-width: 575px) {
   .navbar-nav {
     text-align: center;
