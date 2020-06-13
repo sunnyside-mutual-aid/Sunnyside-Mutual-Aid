@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-28 23:21-0400\n"
+"POT-Creation-Date: 2020-06-13 11:12-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,14 +77,20 @@ msgid "Sunnyside & Woodside Mutual Aid Facebook group"
 msgstr "Grupo de Facebook de Sunnyside & Woodside Mutual Aid"
 
 #: templates/base.html:85
+#, fuzzy
+#| msgid "Sunnyside & Woodside Mutual Aid"
+msgid "Sunnyside & Woodside Mutual Aid Instagram"
+msgstr "Ayuda Mutua de Sunnyside & Woodside Instagram"
+
+#: templates/base.html:86
 msgid "Sunnyside & Woodside Mutual Aid Twitter"
 msgstr "Twitter de Sunnyside & Woodside Mutual Aid"
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "Sunnyside & Woodside Mutual Aid email address"
 msgstr "Correo electrónico de Sunnyside & Woodside Mutual Aid"
 
-#: templates/base.html:87
+#: templates/base.html:88
 msgid "Sunnyside & Woodside Mutual Aid telephone contact"
 msgstr "Contacto telefónico de Sunnyside & Woodside Mutual Aid"
 
