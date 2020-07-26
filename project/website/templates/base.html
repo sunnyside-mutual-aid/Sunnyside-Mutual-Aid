@@ -26,6 +26,11 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-light navbar-light static-top">
     <a class="navbar-brand" href="{% url 'index' %}" aria-label="{% trans 'Return to index' %}"><img src="{% static 'img/greylogo.png' %}" alt="{% trans 'Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background' %}"></a>
+
+    <!-- Email and phone icons are visible when the navbar is collapsed on small displays -->
+    <a class="d-inline-block d-sm-none" href="mailto:mail@swma.nyc" aria-hidden="true"><i class="fas fa-envelope fa-fw gmail-color" id="icon-pad"></i></a>
+    <a class="d-inline-block d-sm-none" href="tel:+1-973-709-5975" aria-hidden="true"><i class="fas fa-phone-square fa-fw voice-color" id="icon-pad"></i></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,8 +38,8 @@
 
     <div class="navbar-nav">
     <div class="navbar-item">
-        <a href="mailto:mail@swma.nyc" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-fw gmail-color" id="icon-pad"></i> mail@swma.nyc</a><br/>
-        <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-fw voice-color" id="icon-pad"></i> +1-973-709-5975</a>
+        <a href="mailto:mail@swma.nyc"><i class="fas fa-envelope fa-fw gmail-color" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}" id="icon-pad"></i> mail@swma.nyc</a><br/>
+        <a href="tel:+1-973-709-5975"><i class="fas fa-phone-square fa-fw voice-color" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}" id="icon-pad"></i> +1-973-709-5975</a>
     </div>
       {% get_pages as pages %}
       {% for page in pages %}
