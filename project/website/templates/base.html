@@ -30,7 +30,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navigation">
+
     <div class="navbar-nav">
+    <div class="navbar-item">
+        <a href="mailto:mail@swma.nyc" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-fw gmail-color" id="icon-pad"></i> mail@swma.nyc</a><br/>
+        <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-fw voice-color" id="icon-pad"></i> +1-973-709-5975</a>
+    </div>
       {% get_pages as pages %}
       {% for page in pages %}
         <a class="nav-item nav-link {% if request.path == page.get_absolute_url %}active{% endif %}" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
