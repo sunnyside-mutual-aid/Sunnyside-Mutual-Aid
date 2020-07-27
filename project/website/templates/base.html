@@ -26,11 +26,21 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-light navbar-light static-top">
     <a class="navbar-brand" href="{% url 'index' %}" aria-label="{% trans 'Return to index' %}"><img src="{% static 'img/greylogo.png' %}" alt="{% trans 'Sunnyside & Woodside Mutual Aid logo - two trees side by side with the sun in the background' %}"></a>
+
+    <!-- Email and phone icons are visible when the navbar is collapsed on small displays -->
+    <a class="d-inline-block d-sm-none" href="mailto:mail@swma.nyc" aria-hidden="true"><i class="fas fa-envelope fa-fw gmail-color"></i></a>
+    <a class="d-inline-block d-sm-none" href="tel:+1-973-709-5975" aria-hidden="true"><i class="fas fa-phone-square fa-fw voice-color"></i></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navigation">
+
     <div class="navbar-nav">
+    <div class="navbar-item">
+        <a href="mailto:mail@swma.nyc"><i class="fas fa-envelope fa-fw gmail-color" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"></i> mail@swma.nyc</a><br/>
+        <a href="tel:+1-973-709-5975"><i class="fas fa-phone-square fa-fw voice-color" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"></i> +1-973-709-5975</a>
+    </div>
       {% get_pages as pages %}
       {% for page in pages %}
         <a class="nav-item nav-link {% if request.path == page.get_absolute_url %}active{% endif %}" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
@@ -81,11 +91,11 @@
   <footer>
     <div class="container text-center center-block mt-4 mb-4" align="center">
        <div class="text-center center-block">
-          <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Facebook group' %}"><i class="fab fa-facebook fa-3x fb-color" id="icon-pad"></i></a>
-          <a href="https://www.instagram.com/swma_nyc/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Instagram' %}"><i class="fab fa-instagram fa-3x ig-color" id="icon-pad"></i></a>
-          <a href="https://twitter.com/swma_nyc" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Twitter' %}"><i class="fab fa-twitter fa-3x twitter-color" id="icon-pad"></i></a>
-          <a href="mailto:sunnysidemutualaid@gmail.com" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-3x gmail-color" id="icon-pad"></i></a>
-          <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-3x voice-color" id="icon-pad"></i></a>
+          <a href="https://www.facebook.com/groups/sunnysidemutualaid/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Facebook group' %}"><i class="fab fa-facebook fa-3x fb-color"></i></a>
+          <a href="https://www.instagram.com/swma_nyc/" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Instagram' %}"><i class="fab fa-instagram fa-3x ig-color"></i></a>
+          <a href="https://twitter.com/swma_nyc" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid Twitter' %}"><i class="fab fa-twitter fa-3x twitter-color"></i></a>
+          <a href="mailto:mail@swma.nyc" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid email address' %}"><i class="fas fa-envelope fa-3x gmail-color"></i></a>
+          <a href="tel:+1-973-709-5975" aria-label="{% trans 'Sunnyside & Woodside Mutual Aid telephone contact' %}"><i class="fas fa-phone-square fa-3x voice-color"></i></a>
         </div>
     </div>
   </footer>
