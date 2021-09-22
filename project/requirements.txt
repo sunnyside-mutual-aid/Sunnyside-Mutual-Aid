@@ -1,4 +1,4 @@
-Django==3.0.7
+Django==3.1.13
 psycopg2-binary==2.8.4
 gunicorn==20.0.4
 django-modeltranslation==0.15
